@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context="com.example.lzz.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_progress_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/animationView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="#f00"
+                android:background="@drawable/progressbar_indeter1"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></View>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/progressbar_1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/progress_bar_drawable"   />
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn"
+        android:text="click me!"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+</LinearLayout>
